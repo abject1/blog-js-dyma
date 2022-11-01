@@ -1,0 +1,25 @@
+{
+  "name": "blog-js-dyma",
+  "version": "1.0.0",
+  "description": "blog effectuer en JS durant la formation Dyma.",
+  "main": "index.html",
+  "scripts": {
+    "sass": "node-sass -w src/scss -o public/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abject1/blog-js-dyma.git"
+  },
+  "keywords": [],
+  "author": "Abject",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abject1/blog-js-dyma/issues"
+  },
+  "homepage": "https://github.com/abject1/blog-js-dyma#readme",
+  "dependencies": {
+    "node-sass": "^7.0.3",
+    "sass": "^1.55.0",
+    "sass-loader": "^13.1.0"
+  }
+}
