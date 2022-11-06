@@ -1,14 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=Form, initial-scale=1.0">
-    <title>Form</title>
-    <link rel="stylesheet" href="/public/css/form.css">
-    <script defer src="/public/js/form.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/form.css">
+    <!-- LINK JS -->
+    <script defer src="../assets/js/form.js"></script>
+    <script defer src="../assets/js/topbar.js"></script>
+    <!-- LINK GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <a href="http://localhost/blog-js-dyma/index.html">Accueil</a>
+    <div class="container">
+        <header>
+            <a href="http://localhost/blog-js-dyma/" class="header-brand">Blog</a>
+            <ul>
+                <li>
+                    <a href="http://localhost/blog-js-dyma/" class="header-nav">Accueil</a>
+                </li>
+                <li>
+                    <a href="./public/html/form.html" class="header-nav active">Crée un article</a>
+                </li>
+            </ul>
+        </header>
+        <div class="content">
+            <form>
+                <h2 class="title-underline">Ajouter un article</h2>
+                <div class="form-group">
+                    <label>Auteur</label>
+                    <input type="text" name="author">
+                </div>
+                <div class="form-group">
+                    <label>Image de profil</label>
+                    <input type="text" name="img">
+                </div>
+                <div class="form-group">
+                    <label>Catégorie</label>
+                    <input type="text" name="category">
+                </div>
+                <div class="form-group">
+                    <label>Titre</label>
+                    <input type="text" name="title"/>
+                </div>
+                <div class="form-group">
+                    <label>Article</label>
+                    <textarea name="content"></textarea>
+                </div>
+                <ul id="errors" class="text-error"></ul>
+                <div class="form-btn-container">
+                    <button class="btn btn-secondary">Annuler</button>
+                    <button class="btn btn-primary">Sauvegarder</button>
+                </div>
+            </form>
+        </div>
+        <footer>&copy; Blog</footer>
+    </div>
 </body>
+
 </html>

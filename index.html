@@ -5,12 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
-    <link rel="stylesheet" href="./public/css/main.css">
-    <script defer src="./public/js/main.js"></script>
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="./public/assets/css/main.css">
+    <link rel="stylesheet" href="./public/assets/css/index.css">
+    <!-- LINK JS -->
+    <script defer src="./public/assets/js/index.js"></script>
+    <script defer src="./public/assets/js/topbar.js"></script>
+    <!-- LINK GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/fa162a40c4.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
-        <a href="http://localhost/blog-js-dyma/public/html/form.html">Form</a>
+        <header>
+            <a href="./index.html" class="header-brand">Blog</a>
+            <div class="header-menu">
+                <ul>
+                    <li>
+                        <a href="./index.html" class="header-nav active">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="./public/html/form.html" class="header-nav">Crée un article</a>
+                    </li>
+                </ul>
+                <div class="header-menu-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="articles-container">
+                <div class="article">
+                    <img src="https://randomuser.me/api/portraits/men/0.jpg" alt="profile">
+                    <h2>Titre de l'article</h2>
+                    <p class="article-author">Tintin et Milou</p>
+                    <p class="article-content">
+                        Napoléon Bonaparte, né le 15 août 1769 à Ajaccio et mort le 5 mai 1821 sur l'île de Sainte-Hélène, est un militaire et
+                        homme d'État français, premier empereur des Français du 18 mai 1804 au 6 avril 1814 et du 20 mars au 22 juin 1815, sous
+                        le nom de Napoléon Ier.
+                        
+                        Second enfant de Charles Bonaparte et Letizia Ramolino, Napoléon Bonaparte devient en 1793 général dans les armées de la
+                        Première République française, née de la Révolution, où il est notamment commandant en chef de l'armée d'Italie puis de
+                        l'armée d'Orient. Arrivé au pouvoir en 1799 par le coup d'État du 18 Brumaire, il est Premier consul — consul à vie à
+                        partir du 2 août 1802 — jusqu'au 18 mai 1804, date à laquelle l'Empire est proclamé par un sénatus-consulte suivi d'un
+                        plébiscite. Il est sacré empereur, en la cathédrale Notre-Dame de Paris, le 2 décembre 1804, par le pape Pie VII, en
+                        même temps que son épouse Joséphine de Beauharnais.
+                    </p>
+                    <div class="article-action">
+                        <button class="btn btn-danger">Supprimer</button>
+                        <button class="btn btn-primary">Modifier</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>&copy; Blog</footer>
     </div>
 </body>
 </html>
